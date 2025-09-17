@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Identitas Pribadi</title>
+  <style>
+    /* Font cantik */
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      overflow-x: hidden;
+    }
+
+    /* Background gradient pastel */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(135deg, #a1c4fd, #fbc2eb);
+      z-index: -2;
+    }
+
+    /* Animasi bunga/unicorn */
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-image: url('https://i.ibb.co/1KZPttM/unicorn-flower.png'); /* gambar unicorn/bunga */
+      background-repeat: repeat;
+      background-size: 200px;
+      opacity: 0.15;
+      animation: moveBackground 40s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes moveBackground {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.8em;
+      color: #e91e63;
+      text-shadow: 2px 2px 5px rgba(255,255,255,0.8);
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+      backdrop-filter: blur(5px);
+    }
+
+    .foto {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .foto img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #fbc2eb;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+      margin-bottom: 25px;
+    }
+
+    .info p {
+      font-size: 1.1em;
+      margin: 12px 0;
+      padding: 12px;
+      border-radius: 12px;
+      background: #f8f9ff;
+      border-left: 6px solid #a1c4fd;
+    }
+
+    .info strong {
+      color: #e91e63;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+      margin-top: 30px;
+      background: rgba(255,255,255,0.6);
+      border-top: 2px dashed #fbc2eb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Identitas Pribadi 🌸
+  </header>
+
+  <div class="container">
+    <div class="foto">
+      <img src="IMG_20230921_215322_0138.jpg" alt="Foto Profil">
+    </div>
+    <h2>Miswanja Batu Padang</h2>
+    <div class="info">
+      <p><strong>NIM:</strong> H021231004</p>
+      <p><strong>Program Studi:</strong> Fisika</p>
+      <p><strong>Universitas:</strong> Universitas Hasanuddin</p>
+      <p><strong>Email:</strong> trisalpampang@gmail.com</p>
+      <p><strong>No. HP:</strong> 085299321866</p>
+      <p><strong>Alamat:</strong> Jl. Cypress View No.62]</p>
+      <p><strong>Hobi:</strong> Hiking, Traveling</p>
+    </div>
+  </div>
+
+  <footer>
+
+  </footer>
+
+</body>
+</html>
